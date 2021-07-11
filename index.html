@@ -1,0 +1,289 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Music player">
+    <meta name="keywords" content="Music player, music, player">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Music player</title>
+    <link rel="shortcut icon" type="image/jpg" href="Svg/music.svg" />
+</head>
+
+<body class="first-background">
+    <div class="content">
+        <div class="row-1">
+            <h1 class="title">Every moment is a fresh beginning</h1>
+            <img src="" class="title-image" />
+            <h5 class="artist">Artist</h5>
+            <canvas class="canvas-container" id="renderer"></canvas>
+            <div class="recoreder-container">
+                <svg id="Isolation_Mode" data-name="Isolation Mode" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2910.7 2145.5">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: none;
+                            }
+
+                            .cls-1,
+                            .cls-10,
+                            .cls-12,
+                            .cls-13,
+                            .cls-2,
+                            .cls-21,
+                            .cls-3,
+                            .cls-8,
+                            .cls-9 {
+                                stroke: #12232e;
+                                stroke-linecap: round;
+                                stroke-linejoin: round;
+                            }
+
+                            .cls-1,
+                            .cls-10,
+                            .cls-12,
+                            .cls-13,
+                            .cls-2,
+                            .cls-3,
+                            .cls-9 {
+                                stroke-width: 9px;
+                            }
+
+                            .cls-2 {
+                                fill: #7f888e;
+                            }
+
+                            .cls-3 {
+                                fill: #a0a7ab;
+                            }
+
+                            .cls-21,
+                            .cls-4 {
+                                fill: #1a2238;
+                            }
+
+                            .cls-5 {
+                                fill: url(#New_Gradient_Swatch);
+                            }
+
+                            .cls-13,
+                            .cls-6 {
+                                fill: #283451;
+                            }
+
+                            .cls-7 {
+                                fill: #12232e;
+                            }
+
+                            .cls-12,
+                            .cls-8 {
+                                fill: #3f5677;
+                            }
+
+                            .cls-8 {
+                                stroke-width: 10px;
+                            }
+
+                            .cls-9 {
+                                fill: #606c73;
+                            }
+
+                            .cls-10,
+                            .cls-20 {
+                                fill: #ed2224;
+                            }
+
+                            .cls-11,
+                            .cls-14,
+                            .cls-16,
+                            .cls-17 {
+                                fill: #fff;
+                            }
+
+                            .cls-14 {
+                                opacity: 0.01;
+                            }
+
+                            .cls-15 {
+                                fill: #4267b2;
+                            }
+
+                            .cls-16 {
+                                fill-rule: evenodd;
+                            }
+
+                            .cls-17 {
+                                opacity: 0.01;
+                                isolation: isolate;
+                            }
+
+                            .cls-18 {
+                                fill: url(#New_Gradient_Swatch-2);
+                            }
+
+                            .cls-19 {
+                                fill: #47c8f5;
+                            }
+
+                            .white-bg {
+                                fill: #ffffff;
+                            }
+                        </style>
+                        <linearGradient id="New_Gradient_Swatch" x1="1168.26" y1="1688.69" x2="1748.56" y2="1688.69"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#fae08a" />
+                            <stop offset="0.21" stop-color="#fcbb46" />
+                            <stop offset="0.38" stop-color="#f05475" />
+                            <stop offset="0.52" stop-color="#d53792" />
+                            <stop offset="0.74" stop-color="#7e50a0" />
+                            <stop offset="1" stop-color="#5c5da9" />
+                        </linearGradient>
+                        <linearGradient id="New_Gradient_Swatch-2" x1="2568.29" y1="1965.73" x2="2909.42" y2="2256.23"
+                            gradientTransform="matrix(1, 0, 0, -1, 0, 2994.52)" xlink:href="#New_Gradient_Swatch" />
+                    </defs>
+                    <g id="recorder">
+                        <rect class="cls-1" x="1033.4" y="854.6" width="843.9" height="1244.36" />
+                        <path class="cls-2"
+                            d="M0,411.2V2145.5H2910.7V411.2ZM519.4,2019.8c-226.4,0-409.9-183.5-409.9-409.8S293,1200.1,519.4,1200.1,929.2,1383.6,929.2,1610,745.7,2019.8,519.4,2019.8Zm1868.6,0c-226.3,0-409.8-183.5-409.8-409.8s183.5-409.9,409.8-409.9,409.9,183.5,409.9,409.9S2614.4,2019.8,2388,2019.8Z" />
+                        <polygon class="cls-3" points="2910.7 411.2 0 411.2 23.2 342.8 2887.4 342.8 2910.7 411.2" />
+                        <g id="tape">
+                            <path class="cls-4"
+                                d="M1772.4,1941.1h-628a35.6,35.6,0,0,1-35.6-35.6V1538.8a35.6,35.6,0,0,1,35.6-35.6h628a35.6,35.6,0,0,1,35.6,35.6v366.7a35.6,35.6,0,0,1-35.6,35.6" />
+                            <path class="cls-5"
+                                d="M1724.9,1544.2h-533a23.6,23.6,0,0,1-23.6,23.6v241.4a23.6,23.6,0,0,1,22.8,23.6v.4h533.8a23.6,23.6,0,0,1,23.7-23.6V1567.8a23.6,23.6,0,0,1-23.7-23.6M1635,1682.8a63.7,63.7,0,0,1-63.7,63.7H1345.5a63.7,63.7,0,0,1-63.7-63.7v-.8a63.7,63.7,0,0,1,63.7-63.6h225.8A63.7,63.7,0,0,1,1635,1682v.8" />
+                            <path class="cls-6"
+                                d="M1394.2,1682.4a90.2,90.2,0,0,0-26.5-64h-22.2a63.7,63.7,0,0,0-63.7,63.7v.8a63.7,63.7,0,0,0,63.7,63.7h22A90.2,90.2,0,0,0,1394.2,1682.4Z" />
+                            <path class="cls-6"
+                                d="M1635,1682.9v-.8a63.7,63.7,0,0,0-63.7-63.7h-84.1a120.8,120.8,0,0,0,8.2,128.2h75.9A63.7,63.7,0,0,0,1635,1682.9Z" />
+                        </g>
+                        <path class="cls-4"
+                            d="M1075.4,1911.3V1452.7h759.8v458.6Zm130-400.5a4.5,4.5,0,0,0-4.5,4.5v328.1a4.5,4.5,0,0,0,4.5,4.5h506a4.5,4.5,0,0,0,4.5-4.5V1515.3a4.5,4.5,0,0,0-4.5-4.5Z" />
+                        <path class="cls-7"
+                            d="M1830.7,1457.2v449.6H1079.9V1457.2h750.8m-625.3,395.2h506a9,9,0,0,0,9-9V1515.3a9,9,0,0,0-9-9h-506a9,9,0,0,0-9,9v328.1a9,9,0,0,0,9,9m634.3-404.2H1070.9v467.6h768.8V1448.2Zm-634.3,395.2V1515.3h506v328.1Z" />
+                        <rect class="cls-3" x="1923.4" y="886.8" width="275.3" height="132.3" />
+                        <rect class="cls-1" x="470.2" y="411.2" width="1970.2" height="443.39" />
+                        <rect id="_rec_" data-name="&lt;rec&gt;" class="cls-3" x="708" y="886.8" width="275.3"
+                            height="132.3" />
+                        <rect class="cls-3" x="470.2" y="411.2" width="110.8" height="443.39" />
+                        <rect class="cls-3" x="2329.6" y="411.2" width="110.8" height="443.39" />
+                        <rect class="cls-8" x="955" width="1000.6" height="141.24" />
+                        <path class="cls-9"
+                            d="M812.5,141.2V377h51.8V259.1c0-117.9,90.7-117.9,90.7-117.9V0C807.9,0,812.5,141.2,812.5,141.2Z" />
+                        <path class="cls-9"
+                            d="M2098.2,141.2V377h-51.9V259.1c0-117.9-90.6-117.9-90.6-117.9V0C2102.8,0,2098.2,141.2,2098.2,141.2Z" />
+                    </g>
+                    <g id="buttons-group">
+                        <rect id="previous-button-background" class="cls-10" x="1072.8" y="1915.8" width="192.4"
+                            height="167.98" />
+                        <g id="previous-group">
+                            <circle id="previous-bg" class="cls-4" cx="1169" cy="1999.8" r="45.5"
+                                transform="translate(-1045.9 2678.1) rotate(-76.7)" />
+                            <path id="previous-path2" class="cls-11"
+                                d="M1170.9,2003.1l14.8,8.5a3.8,3.8,0,0,0,5.7-3.3v-17a3.8,3.8,0,0,0-5.7-3.3l-14.8,8.5A3.8,3.8,0,0,0,1170.9,2003.1Z" />
+                            <path id="previous-path1" class="cls-11"
+                                d="M1148.5,2003.1l14.8,8.5a3.8,3.8,0,0,0,5.7-3.3v-17a3.8,3.8,0,0,0-5.7-3.3l-14.8,8.5A3.8,3.8,0,0,0,1148.5,2003.1Z" />
+                        </g>
+                        <rect id="stop-button-background" class="cls-10" x="1264.2" y="1915.8" width="192.4"
+                            height="167.98" />
+                        <g id="pause-group">
+                            <circle id="pause-bg" class="cls-4" cx="1359.9" cy="1999.8" r="45.5" />
+                            <path id="pause-path2" class="cls-11"
+                                d="M1350.3,2020.2h0a5.9,5.9,0,0,1-5.9-6v-28.8a5.9,5.9,0,0,1,5.9-6h0a6,6,0,0,1,6,6v28.8A6,6,0,0,1,1350.3,2020.2Z" />
+                            <path id="pause-path1" class="cls-11"
+                                d="M1369.5,2020.2h0a6,6,0,0,1-6-6v-28.8a6,6,0,0,1,6-6h0a5.9,5.9,0,0,1,5.9,6v28.8A5.9,5.9,0,0,1,1369.5,2020.2Z" />
+                        </g>
+                        <rect id="play-button-background" class="cls-10" x="1456.7" y="1915.8" width="192.4"
+                            height="167.98" />
+                        <g id="play-group">
+                            <circle id="play-bg" class="cls-4" cx="1552.9" cy="1999.8" r="45.5" />
+                            <path id="play-path1" class="cls-11"
+                                d="M1571.2,1994.3l-24.4-14a6.3,6.3,0,0,0-9.4,5.4v28.1a6.3,6.3,0,0,0,9.4,5.5l24.4-14.1A6.3,6.3,0,0,0,1571.2,1994.3Z" />
+                        </g>
+                        <rect id="next-button-background" class="cls-10" x="1649.4" y="1915.8" width="192.4"
+                            height="167.98" />
+                        <g id="next-group">
+                            <circle id="next-bg" class="cls-4" cx="1745.6" cy="2003.2" r="45.5" />
+                            <path id="next-path2" class="cls-11"
+                                d="M1743.7,1999.9l-14.7-8.5a3.8,3.8,0,0,0-5.8,3.3v17a3.9,3.9,0,0,0,5.8,3.3l14.7-8.5A3.8,3.8,0,0,0,1743.7,1999.9Z" />
+                            <path id="next-path1" class="cls-11"
+                                d="M1766.1,1999.9l-14.8-8.5a3.8,3.8,0,0,0-5.7,3.3v17a3.8,3.8,0,0,0,5.7,3.3l14.8-8.5A3.8,3.8,0,0,0,1766.1,1999.9Z" />
+                        </g>
+                    </g>
+                    <rect id="image-place" class="cls-3" x="1070.9" y="886.8" width="768.8" height="532.56" />
+                    <circle id="right-top-circle" class="cls-12" cx="2679.4" cy="600.7" r="143" />
+                    <circle id="right-bottom-circle" class="cls-12" cx="2679.4" cy="934.2" r="165.4" />
+                    <circle id="left-top-circle" class="cls-12" cx="236" cy="600.7" r="143" />
+                    <circle id="left-bottom-circle" class="cls-12" cx="236" cy="934.2" r="165.4" />
+                    <circle id="right-circle" class="cls-13" cx="2388" cy="1610" r="110"
+                        transform="translate(-439 2160.1) rotate(-45)" />
+                    <circle id="left-circle" class="cls-13" cx="519.4" cy="1610" r="110"
+                        transform="translate(-986.3 838.8) rotate(-45)" />
+                    <path id="tape-path-2" class="cls-11"
+                        d="M1348.1,1726.1a45,45,0,1,0-45-45A45.1,45.1,0,0,0,1348.1,1726.1Zm-4.4-79.7v8.9h8.7v-8.9a35.4,35.4,0,0,1,23.9,14.1l-7.4,4.1,4.2,7.6,7.4-4.1a35,35,0,0,1,2.5,13,33,33,0,0,1-1.5,9.9l-7.2-3.8-4,7.6,7.8,4.1a34.7,34.7,0,0,1-25.7,16.8v-9.1h-8.7v9.1a35.1,35.1,0,0,1-24.5-15l8.1-4.5-4.3-7.5-7.7,4.3a33.5,33.5,0,0,1-2.1-11.9,35.4,35.4,0,0,1,2.8-13.8l8,4.3,4-7.7-7.7-4A35,35,0,0,1,1343.7,1646.4Z" />
+                    <path id="tape-path-1" class="cls-11"
+                        d="M1566.6,1726.1a45,45,0,1,0-45-45A45.1,45.1,0,0,0,1566.6,1726.1Zm-4.4-79.7v8.9h8.7v-8.9a35.4,35.4,0,0,1,23.9,14.1l-7.4,4.1,4.2,7.6,7.3-4.1a33.2,33.2,0,0,1,2.6,13,36.5,36.5,0,0,1-1.5,9.9l-7.2-3.8-4,7.6,7.7,4.1a34.4,34.4,0,0,1-25.6,16.8v-9.1h-8.7v9.1a35.1,35.1,0,0,1-24.5-15l8-4.5-4.2-7.5-7.7,4.3a33.5,33.5,0,0,1-2.2-11.9,35.5,35.5,0,0,1,2.9-13.8l8,4.3,4-7.7-7.7-4A35,35,0,0,1,1562.2,1646.4Z" />
+                    <rect id="next-mask" class="cls-14" x="1652.1" y="1915.8" width="187.6" height="167.98" />
+                    <rect id="play-mask" class="cls-14" x="1456.7" y="1915.8" width="190" height="167.98" />
+                    <rect id="stop-mask" class="cls-14" x="1264.2" y="1915.8" width="188.9" height="167.98" />
+                    <rect id="previous-mask" class="cls-14" x="1072.8" y="1915.8" width="187.5" height="167.98" />
+                    <g id="facebook">
+                        <circle class="cls-15" cx="237.3" cy="598.8" r="125" />
+                        <path id="facebook-path1" class="cls-16"
+                            d="M217.6,597v68.2c0,1.1,0,2.2,1.1,2.2h26a2.1,2.1,0,0,0,2.1-2.2h0V594.8h20.6V573.2c0-1.1,0-1.1-1.1-1.1H246.8V555.8a6.5,6.5,0,0,1,6.5-6.5h14.1a2.1,2.1,0,0,0,2.2-2.1V526.6l-2.2-2.2H243.6a25.9,25.9,0,0,0-26,26h0V571h-13c-1.1,0-2.2,0-2.2,1.1v21.6h15.2Z" />
+                        <rect id="facebook-mask" class="cls-17" x="106" y="463.9" width="260" height="260" />
+                    </g>
+                    <g id="instagram">
+                        <circle id="instagram-path3" class="cls-11" cx="2679.4" cy="934.2" r="137.5" />
+                        <path id="instagram-path2" class="cls-18"
+                            d="M2679.4,1071.7a137.5,137.5,0,1,1,137.5-137.5A137.6,137.6,0,0,1,2679.4,1071.7Zm46.3-193.8a10.7,10.7,0,0,0,0,21.3,10,10,0,0,0,10-10h0A10,10,0,0,0,2727,878Zm-45,13.8a42.5,42.5,0,1,0,42.5,42.5h0A42.5,42.5,0,0,0,2680.7,891.7Zm0,70a27.5,27.5,0,1,1,27.5-27.5A27.5,27.5,0,0,1,2680.7,961.7Zm86.2-62.5a52.5,52.5,0,0,0-52.5-52.5h-68.7a52.5,52.5,0,0,0-52.5,52.5h0v68.7a51.3,51.3,0,0,0,51.2,51.3h70a51.3,51.3,0,0,0,52.5-50v-70Zm-16.2,68.7a36.3,36.3,0,0,1-36.3,35h-68.7a35,35,0,0,1-35-35h0V899.2a35,35,0,0,1,33.7-36.3h70a36.3,36.3,0,0,1,36.3,36.3h0Z" />
+                    </g>
+                    <g id="twitter">
+                        <path id="twitter-bg" class="cls-19"
+                            d="M2679.4,719.9a119.2,119.2,0,1,1,119.2-119.2A119.2,119.2,0,0,1,2679.4,719.9Z" />
+                        <path id="twitter-path-1" class="cls-11"
+                            d="M2747.7,557.4l-14.1,4.3,7.6-6.5a23.2,23.2,0,0,0,4.3-8.6h-1.1a55.6,55.6,0,0,1-16.2,6.5h-3.3a19.1,19.1,0,0,0-7.6-5.5l-11.9-2.1a38.2,38.2,0,0,0-11.9,3.2,42.3,42.3,0,0,0-9.8,7.6,66.9,66.9,0,0,0-5.4,11.9,47.6,47.6,0,0,0-1.1,11.9c1.1,1.1,1.1,1.1,0,1.1a95.3,95.3,0,0,1-57.4-31.4h-1.1a26,26,0,0,0,4.4,33.6l3.2,3.2a21.9,21.9,0,0,1-10.8-3.2h-1.1v3.2a34.9,34.9,0,0,0,18.4,25h-7.6A29.7,29.7,0,0,0,2648,630h3.2c-3.2,4.3-11.9,6.5-16.2,8.6a56.4,56.4,0,0,1-23.8,2.2h-1.1c-1.1,1.1,0,1.1,0,1.1l5.4,3.2,15.2,6.5a76.4,76.4,0,0,0,104-79h2.1a59.2,59.2,0,0,0,10.9-12v-3.2h0Z" />
+                        <rect id="twitter-mask" class="cls-17" x="2549.4" y="470.7" width="260" height="260" />
+                    </g>
+                    <g id="youtube">
+                        <path id="youtube-path2" class="cls-20"
+                            d="M237,1072.3A137.5,137.5,0,1,1,374.5,934.8,137.6,137.6,0,0,1,237,1072.3Z" />
+                        <path id="youtube-path1" class="cls-11"
+                            d="M312.7,915.3a33.2,33.2,0,0,0-32.1-32.1H195.8a33.2,33.2,0,0,0-32.1,32.1v40.1a33.3,33.3,0,0,0,32.1,32.1h84.8a33.3,33.3,0,0,0,32.1-32.1ZM260,937l-34.4,18.4c-1.2,1.1-2.3,0-2.3-1.2V916.4c0-2.3,1.1-3.4,2.3-2.3L260,933.6C261.1,934.8,261.1,937,260,937Z" />
+                        <rect id="youtube-mask" class="cls-17" x="99.5" y="797.3" width="275" height="275" />
+                    </g>
+                    <rect id="title-place" class="cls-21" x="683.9" y="437.3" width="1542.9" height="391.25" />
+                    <rect id="artist-place" class="cls-4" x="1221.4" y="1767.1" width="478.8" height="54.08" rx="12" />
+                </svg>
+            </div>
+        </div>
+        <div class="row-2"><span><span class="music-span" id="music-span-1"><img class="music-img" src="Img/1.jpg" />
+                    <h4 value="Music/1.mp3" class="music-play"></h4>
+                    <h3 class="music-header">Clown</h3>
+                    <h4 class="music-artist">Tila</h4><a class="music-source" href="https://www.bensound.com"
+                        rel="nofollow" target="_blank">Music</a>
+                </span><span class="music-span" id="music-span-2"><img class="music-img" src="Img/2.jpg" />
+                    <h4 value="Music/2.mp3" class="music-play"></h4>
+                    <h3 class="music-header">Dubstep</h3>
+                    <h4 class="music-artist">wobble</h4><a class="music-source" href="https://www.bensound.com"
+                        rel="nofollow" target="_blank">Music</a>
+                </span><span class="music-span" id="music-span-3"><img class="music-img" src="Img/3.jpg" />
+                    <h4 value="Music/3.mp3" class="music-play"></h4>
+                    <h3 class="music-header">Beach Party</h3>
+                    <h4 class="music-artist">Osna</h4><a class="music-source" href="https://www.bensound.com"
+                        rel="nofollow" target="_blank">Music</a>
+                </span><span class="music-span" id="music-span-4"><img class="music-img" src="Img/4.jpg" />
+                    <h4 value="Music/4.mp3" class="music-play"></h4>
+                    <h3 class="music-header">Better Days</h3>
+                    <h4 class="music-artist">Five</h4><a class="music-source" href="https://www.bensound.com"
+                        rel="nofollow" target="_blank">Music</a>
+                </span><span class="music-span" id="music-span-5"><img class="music-img" src="Img/5.jpg" />
+                    <h4 value="Music/5.mp3" class="music-play"></h4>
+                    <h3 class="music-header">All Around Us</h3>
+                    <h4 class="music-artist">Parham</h4><a class="music-source" href="https://www.bensound.com"
+                        rel="nofollow" target="_blank">Music</a>
+                </span></span></div>
+    </div>
+    <script defer type="text/javascript" src="JS/play.js" charset="utf-8"></script>
+</body>
+
+</html>

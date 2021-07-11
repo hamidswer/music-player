@@ -1,0 +1,256 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+/* ===================================================================== */
+/* ===============================Font/Text============================= */
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../Fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../Fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+/* ===================================================================== */
+/* ===============================Background============================ */
+body {
+  margin: 0rem;
+  padding: 0rem;
+  border: 0rem;
+  width: 100%;
+}
+
+.first-background {
+  background-color: #1A2238;
+}
+
+/* ===================================================================== */
+/* ===============================Grid================================== */
+
+/* ===================================================================== */
+/* =============================content================================= */
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 20rem;
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+/* ===================================================================== */
+/* =============================row-1=================================== */
+.row-1 {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  position: relative;
+  /* overflow: hidden; */
+  height: 737px;
+  width: 1000px;
+}
+.title {
+  font-family: "Poppins-Regular";
+  font-size: 4rem;
+  text-align: center;
+  color: #ffffff;
+  z-index: 4;
+}
+.title-image {
+  z-index: 4;
+}
+.artist {
+  font-family: "Poppins-Regular";
+  font-size: 1rem;
+  text-align: center;
+  color: #ffffff;
+  z-index: 4;
+  margin-top: -2px;
+}
+.music-artist {
+  font-family: "Poppins-Regular";
+  font-size: 1rem;
+  text-align: center;
+  color: #ffffff;
+  z-index: 4;
+  margin-top: -2px;
+}
+.recoreder-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  margin: auto;
+  z-index: 3;
+  
+}
+canvas, svg {
+  display: block;
+}
+.canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  margin: auto;
+  z-index: 1;
+}
+.play-mask {
+  z-index: 100;
+}
+
+
+.row-2 {
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  position: relative;
+  justify-items: center;
+  justify-self: center;
+}
+
+span {
+  display: inline-block;
+  overflow: hidden;
+  margin: 1rem 0.5rem;
+}
+
+span.music-span {
+  display: inline-block;
+  width: 15rem;
+  overflow: hidden;
+  margin: 0rem 0.5rem;
+  position: relative;
+  background: #1A2238;
+  transform: perspective(900px) rotateX(60deg) scale(0.7);
+  transition:0.5s ease all;
+}
+
+span.music-span:hover {
+  transform: rotate(0deg) scale(1);
+}
+
+#stop-mask:hover,#play-mask:hover,#previous-mask:hover,#next-mask:hover {
+  fill: rgb(65, 65, 65);
+  opacity: 0.25;
+}
+
+
+
+
+.music-play {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  width: 5rem;
+  height: 5rem;
+  background-image: url(../Svg/play.svg);
+  display: none;
+}
+
+.music-active {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  width: 5rem;
+  height: 5rem;
+  background-image: url(../Svg/pause.svg);
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.music-img {
+  width: 15rem;
+  height: auto;
+}
+
+.music-header {
+  display: block;
+  font-family: "Poppins-Medium";
+  font-size: 2rem;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+
+.music-source {
+  display: block;
+  font-family: "Poppins-Regular";
+  text-decoration: none;
+  text-align: center;
+  color: #919191;
+}
+
+/* ===================================================================== */
+/* =============================animation=============================== */
+.tape-animation {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: tape-anim 5s infinite linear;
+}
+
+@keyframes tape-anim {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  } 
+}
+/* ===================================================================== */
+/* =============================row-7=================================== */
+.row-7 {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-row: 7/8;
+  margin-top: 3rem;
+  grid-column: 2/-2;
+}
+
+.social-media-icons {
+  width: 5rem;
+  max-width: 5rem;
+}
+
+.social-media {
+  display: grid;
+  grid-column: 4/8;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  grid-row: 1/-1;
+}
+
+@media only screen and (max-device-width: 1030px) and (orientation: landscape) {
+  span.form {
+    height: 30rem;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, 5%);
+  }
+
+  .form h1 {
+    margin-top: 0rem;
+  }
+}
+
+
+
+@media only screen and (max-device-width: 1030px) and (orientation: portrait ) {
+
+.row-2 {
+    grid-column: 4/-2;
+  }
+
+}
